@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        
+        <ui:composition>
+            Nombre:
+            <h:inputText id="user_name" value="#{usuarioControler.user.userName}"></h:inputText>
+            correo:
+            <h:inputText id="user_correo" value="#{usuarioControler.user.userCorreoInst}"></h:inputText>
+            contraseña:
+            <h:inputText id="user_contrasena" value="#{usuarioControler.user.userPassword}"></h:inputText>
+            genero:
+            <h:inputText id="user_gen" value="#{usuarioControler.user.usergen}"></h:inputText>
+            facultad:
+            <h:inputText id="user_program" value="#{usuarioControler.user.userProgram}"></h:inputText>
+            beca:
+            <h:inputText id="user_beca" value="#{usuarioControler.user.userBeca}"></h:inputText>
+            estado:
+            <h:inputText id="user_estado" value="#{usuarioControler.user.userEstado}"> </h:inputText>
+            tipo:
+            <h:inputText id="user_type" value="#{usuarioControler.user.userType}"></h:inputText>
+            <h:commandButton action="#{usuarioControler.registrar()}" value="Registrar" styleClass="btn btn-primary" />
+        </ui:composition>    
+        
+    </body>
+</html>
