@@ -17,20 +17,29 @@ and open the template in the editor.
         <ui:composition>
             Nombre:
             <h:inputText id="user_name" value="#{usuarioControler.user.userName}"></h:inputText>
+            <br></br><br></br>
             correo:
             <h:inputText id="user_correo" value="#{usuarioControler.user.userCorreoInst}"></h:inputText>
+            <br></br><br></br>
             contraseña:
             <h:inputText id="user_contrasena" value="#{usuarioControler.user.userPassword}"></h:inputText>
+            <br></br><br></br>
             genero:
             <h:inputText id="user_gen" value="#{usuarioControler.user.usergen}"></h:inputText>
+            <br></br><br></br>
             facultad:
             <h:inputText id="user_program" value="#{usuarioControler.user.userProgram}"></h:inputText>
+            <br></br><br></br>
             beca:
             <h:inputText id="user_beca" value="#{usuarioControler.user.userBeca}"></h:inputText>
+            <br></br><br></br>
             estado:
             <h:inputText id="user_estado" value="#{usuarioControler.user.userEstado}"> </h:inputText>
+            <br></br><br></br>
             tipo:
             <h:inputText id="user_type" value="#{usuarioControler.user.userType}"></h:inputText>
+            <br></br><br></br>
+            <br></br><br></br>
             <h:commandButton action="#{usuarioControler.registrar()}" value="Registrar" styleClass="btn btn-primary" />
         </ui:composition>    
         
