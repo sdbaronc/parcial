@@ -25,12 +25,13 @@
     <h:body>
         <div class="container-fluid">
             <ui:insert name="Estudiante">
-                <ui:include src="Estudiante.xhtml"/>
+                
             </ui:insert>
         </div>
 
 
         <div class="d-flex" id="wrapper">
+            <ui:insert name="siderbar">
 
             <!-- Sidebar -->
             <div class="bg-light border-right" id="sidebar-wrapper">
@@ -48,9 +49,11 @@
                     
                 </div>
             </div>
+            </ui:insert>
             <!-- /#sidebar-wrapper -->
 
             <!-- Page Content -->
+             
             <div id="page-content-wrapper">
 
                 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
@@ -60,6 +63,7 @@
 
                     </div>
                 </nav>
+                <ui:insert name="contenido">
 
                 <div class="container-fluid">
                     <h1 class="mt-4">Sabías que...</h1>
@@ -81,8 +85,11 @@
                     </ul>
 
                 </div>
+                </ui:insert>
             </div>
+                 
             <!-- /#page-content-wrapper -->
+          
 
         </div>
         <!-- /#wrapper -->
