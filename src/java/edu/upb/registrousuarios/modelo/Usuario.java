@@ -5,6 +5,8 @@
  */
 package edu.upb.registrousuarios.modelo;
 
+import java.util.*;
+
 /**
  *
  * @author CharliePC
@@ -16,6 +18,19 @@ public class Usuario {
     private String userProgram;
     private String userCorreoInst;
     private String usergen;
+    public Usuario(){}
+
+    public Usuario(String userName, String userPassword, String userProgram, String userCorreoInst, String usergen, String userEstado, String userBeca, String UserType) {
+        this.userName = userName;
+        this.userPassword = userPassword;
+        this.userProgram = userProgram;
+        this.userCorreoInst = userCorreoInst;
+        this.usergen = usergen;
+        this.userEstado = userEstado;
+        this.userBeca = userBeca;
+        this.UserType = UserType;
+    }
+    
     private String userEstado;
     private String userBeca;
     private String UserType;
@@ -83,6 +98,11 @@ public class Usuario {
     public void setUserProgram(String userProgram) {
         this.userProgram = userProgram;
     }
+    
+    Usuario user1=new Usuario("sergio", "12345", "sistemas", "sergio123", "M", "a", "no", "E");
+    
+    
+    
     
     
 }
