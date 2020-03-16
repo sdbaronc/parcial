@@ -1,0 +1,18 @@
+¿qué diferencias y similitudes existe entre clases abstractas e interfaces? 
+Se asemejan en que las dos pueden definir métodos.
+Una clase abstracta puede heredar cualquier clase sea abstracta o no, en cambio una interfaz solo puede heredar otras interfaces.
+Las interfaces permiten herencia múltiple, es decir, pueden heredar varias interfaces a la vez. En cambio, una clase abstracta puede heredar de una sola clase.
+Una clase abstracta puede tener métodos abstractos y métodos normales, una interfaz solo puede tener métodos abstractos.
+Los métodos en una clase abstracta pueden ser protegidos o públicos, en cambio, en una interfaz los métodos son públicos obligatoriamente.
+Una clase abstracta puede tener variables, en cambio, una interfaz solo tiene constantes.
+Es obligatorio implementar todos los métodos de una interfaz, en cambio, en las clases abstractas pueden haber métodos que no se implementen.
+
+¿cuándo se recomienda usar una sobre la otra? 
+Si necesitamos que varias clases hereden tanto métodos como atributos, si solo necesitamos algunas métodos y no todos entonces la opcion recomendada 
+es una clase abstracta, pero si necesitamos que una clase implemente una lista de métodos y los implementará todos entonces la mejor opción es unainterfaz. 
+Por otro lado, si esta debe heredar de varias clases o interfaces, la mejor opcion es una interfaz ya que una clase abstracta como se mencionó anteriormente
+no permite herencia múltiple.
+
+¿Cuándo es conveniente el usuario de tipos de datos genéricos y enumeradores?
+Es conveniente utilizar enumeradores cuando se quiere retringir el valor que puede tomar una variable.
+Es conveniente utilizar datos genericos cuando queremos agrupar datos de diferentes tipos.
