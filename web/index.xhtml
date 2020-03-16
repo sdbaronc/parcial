@@ -17,17 +17,17 @@ and open the template in the editor.
         <ui:composition>
             
             correo:
-            <h:inputText id="user_correo" value="#{usuarioControler.user.userCorreoInst}"></h:inputText>
+            <h:inputText id="user_correo" value="#{control.correo}"></h:inputText>
             <br></br><br></br>
             contraseña:
-            <h:inputText id="user_contrasena" value="#{usuarioControler.user.userPassword}"></h:inputText>
+            <h:inputSecret id="user_contrasena" value="#{control.clave}" ></h:inputSecret>
             <br></br><br></br>
             
             <br></br>
             <br></br>
             <br></br>
             <br></br>
-            <h:commandButton action="#{usuarioControler.registrar()}" value="Registrar" styleClass="btn btn-primary" />
+            <h:commandButton action="Estudiante.xhtml?faces-redirect=true" value="#{control.login()}" styleClass="btn btn-primary" />
         </ui:composition>    
         
     </body>
